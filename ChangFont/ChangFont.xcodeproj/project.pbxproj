@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B48758120EDF54600C9B0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48758020EDF54600C9B0CD /* AppDelegate.swift */; };
+		0B48758320EDF54600C9B0CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48758220EDF54600C9B0CD /* ViewController.swift */; };
+		0B48758620EDF54600C9B0CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B48758420EDF54600C9B0CD /* Main.storyboard */; };
+		0B48758820EDF54700C9B0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B48758720EDF54700C9B0CD /* Assets.xcassets */; };
+		0B48758B20EDF54700C9B0CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B48758920EDF54700C9B0CD /* LaunchScreen.storyboard */; };
+		0B48759620EDF54700C9B0CD /* ChangFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48759520EDF54700C9B0CD /* ChangFontTests.swift */; };
+		0B4875A120EDF54700C9B0CD /* ChangFontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4875A020EDF54700C9B0CD /* ChangFontUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B48759220EDF54700C9B0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B48757520EDF54600C9B0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B48757C20EDF54600C9B0CD;
+			remoteInfo = ChangFont;
+		};
+		0B48759D20EDF54700C9B0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B48757520EDF54600C9B0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B48757C20EDF54600C9B0CD;
+			remoteInfo = ChangFont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B48757D20EDF54600C9B0CD /* ChangFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B48758020EDF54600C9B0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B48758220EDF54600C9B0CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B48758520EDF54600C9B0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B48758720EDF54700C9B0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B48758A20EDF54700C9B0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B48758C20EDF54700C9B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B48759120EDF54700C9B0CD /* ChangFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B48759520EDF54700C9B0CD /* ChangFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangFontTests.swift; sourceTree = "<group>"; };
+		0B48759720EDF54700C9B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B48759C20EDF54700C9B0CD /* ChangFontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangFontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4875A020EDF54700C9B0CD /* ChangFontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangFontUITests.swift; sourceTree = "<group>"; };
+		0B4875A220EDF54700C9B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4875AF20EDF5C700C9B0CD /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		0B4875B020EDF5C700C9B0CD /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		0B4875B120EDF5C800C9B0CD /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
+		0B4875B220EDF5C800C9B0CD /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B48757A20EDF54600C9B0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48758E20EDF54700C9B0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48759920EDF54700C9B0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B48757420EDF54600C9B0CD = {
+			isa = PBXGroup;
+			children = (
+				0B4875AE20EDF5A500C9B0CD /* Fonts */,
+				0B48757F20EDF54600C9B0CD /* ChangFont */,
+				0B48759420EDF54700C9B0CD /* ChangFontTests */,
+				0B48759F20EDF54700C9B0CD /* ChangFontUITests */,
+				0B48757E20EDF54600C9B0CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B48757E20EDF54600C9B0CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B48757D20EDF54600C9B0CD /* ChangFont.app */,
+				0B48759120EDF54700C9B0CD /* ChangFontTests.xctest */,
+				0B48759C20EDF54700C9B0CD /* ChangFontUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B48757F20EDF54600C9B0CD /* ChangFont */ = {
+			isa = PBXGroup;
+			children = (
+				0B48758020EDF54600C9B0CD /* AppDelegate.swift */,
+				0B48758220EDF54600C9B0CD /* ViewController.swift */,
+				0B48758420EDF54600C9B0CD /* Main.storyboard */,
+				0B48758720EDF54700C9B0CD /* Assets.xcassets */,
+				0B48758920EDF54700C9B0CD /* LaunchScreen.storyboard */,
+				0B48758C20EDF54700C9B0CD /* Info.plist */,
+			);
+			path = ChangFont;
+			sourceTree = "<group>";
+		};
+		0B48759420EDF54700C9B0CD /* ChangFontTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B48759520EDF54700C9B0CD /* ChangFontTests.swift */,
+				0B48759720EDF54700C9B0CD /* Info.plist */,
+			);
+			path = ChangFontTests;
+			sourceTree = "<group>";
+		};
+		0B48759F20EDF54700C9B0CD /* ChangFontUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B4875A020EDF54700C9B0CD /* ChangFontUITests.swift */,
+				0B4875A220EDF54700C9B0CD /* Info.plist */,
+			);
+			path = ChangFontUITests;
+			sourceTree = "<group>";
+		};
+		0B4875AE20EDF5A500C9B0CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0B4875B120EDF5C800C9B0CD /* Gaspar Regular.otf */,
+				0B4875B020EDF5C700C9B0CD /* MFJinHei_Noncommercial-Regular.ttf */,
+				0B4875AF20EDF5C700C9B0CD /* MFTongXin_Noncommercial-Regular.ttf */,
+				0B4875B220EDF5C800C9B0CD /* MFZhiHei_Noncommercial-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B48757C20EDF54600C9B0CD /* ChangFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4875A520EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFont" */;
+			buildPhases = (
+				0B48757920EDF54600C9B0CD /* Sources */,
+				0B48757A20EDF54600C9B0CD /* Frameworks */,
+				0B48757B20EDF54600C9B0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChangFont;
+			productName = ChangFont;
+			productReference = 0B48757D20EDF54600C9B0CD /* ChangFont.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B48759020EDF54700C9B0CD /* ChangFontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4875A820EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFontTests" */;
+			buildPhases = (
+				0B48758D20EDF54700C9B0CD /* Sources */,
+				0B48758E20EDF54700C9B0CD /* Frameworks */,
+				0B48758F20EDF54700C9B0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B48759320EDF54700C9B0CD /* PBXTargetDependency */,
+			);
+			name = ChangFontTests;
+			productName = ChangFontTests;
+			productReference = 0B48759120EDF54700C9B0CD /* ChangFontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B48759B20EDF54700C9B0CD /* ChangFontUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4875AB20EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFontUITests" */;
+			buildPhases = (
+				0B48759820EDF54700C9B0CD /* Sources */,
+				0B48759920EDF54700C9B0CD /* Frameworks */,
+				0B48759A20EDF54700C9B0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B48759E20EDF54700C9B0CD /* PBXTargetDependency */,
+			);
+			name = ChangFontUITests;
+			productName = ChangFontUITests;
+			productReference = 0B48759C20EDF54700C9B0CD /* ChangFontUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B48757520EDF54600C9B0CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = lizhang;
+				TargetAttributes = {
+					0B48757C20EDF54600C9B0CD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					0B48759020EDF54700C9B0CD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 0B48757C20EDF54600C9B0CD;
+					};
+					0B48759B20EDF54700C9B0CD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 0B48757C20EDF54600C9B0CD;
+					};
+				};
+			};
+			buildConfigurationList = 0B48757820EDF54600C9B0CD /* Build configuration list for PBXProject "ChangFont" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B48757420EDF54600C9B0CD;
+			productRefGroup = 0B48757E20EDF54600C9B0CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B48757C20EDF54600C9B0CD /* ChangFont */,
+				0B48759020EDF54700C9B0CD /* ChangFontTests */,
+				0B48759B20EDF54700C9B0CD /* ChangFontUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B48757B20EDF54600C9B0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B48758B20EDF54700C9B0CD /* LaunchScreen.storyboard in Resources */,
+				0B48758820EDF54700C9B0CD /* Assets.xcassets in Resources */,
+				0B48758620EDF54600C9B0CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48758F20EDF54700C9B0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48759A20EDF54700C9B0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B48757920EDF54600C9B0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B48758320EDF54600C9B0CD /* ViewController.swift in Sources */,
+				0B48758120EDF54600C9B0CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48758D20EDF54700C9B0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B48759620EDF54700C9B0CD /* ChangFontTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B48759820EDF54700C9B0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4875A120EDF54700C9B0CD /* ChangFontUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B48759320EDF54700C9B0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B48757C20EDF54600C9B0CD /* ChangFont */;
+			targetProxy = 0B48759220EDF54700C9B0CD /* PBXContainerItemProxy */;
+		};
+		0B48759E20EDF54700C9B0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B48757C20EDF54600C9B0CD /* ChangFont */;
+			targetProxy = 0B48759D20EDF54700C9B0CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B48758420EDF54600C9B0CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B48758520EDF54600C9B0CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B48758920EDF54700C9B0CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B48758A20EDF54700C9B0CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B4875A320EDF54700C9B0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B4875A420EDF54700C9B0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B4875A620EDF54700C9B0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR6ZL3F5G8;
+				INFOPLIST_FILE = ChangFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B4875A720EDF54700C9B0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FR6ZL3F5G8;
+				INFOPLIST_FILE = ChangFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B4875A920EDF54700C9B0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChangFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChangFont.app/ChangFont";
+			};
+			name = Debug;
+		};
+		0B4875AA20EDF54700C9B0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChangFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChangFont.app/ChangFont";
+			};
+			name = Release;
+		};
+		0B4875AC20EDF54700C9B0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChangFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChangFont;
+			};
+			name = Debug;
+		};
+		0B4875AD20EDF54700C9B0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChangFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhang.ChangFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChangFont;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B48757820EDF54600C9B0CD /* Build configuration list for PBXProject "ChangFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4875A320EDF54700C9B0CD /* Debug */,
+				0B4875A420EDF54700C9B0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4875A520EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4875A620EDF54700C9B0CD /* Debug */,
+				0B4875A720EDF54700C9B0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4875A820EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4875A920EDF54700C9B0CD /* Debug */,
+				0B4875AA20EDF54700C9B0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4875AB20EDF54700C9B0CD /* Build configuration list for PBXNativeTarget "ChangFontUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4875AC20EDF54700C9B0CD /* Debug */,
+				0B4875AD20EDF54700C9B0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B48757520EDF54600C9B0CD /* Project object */;
+}
